@@ -57,6 +57,7 @@ jobs:
       - name: Install dependencies
         run: |
           make venv
+          sudo apt-get install librsvg2-bin
         working-directory: ${{ github.workspace }}/cpython/Doc
 
       - name: Build documentation
