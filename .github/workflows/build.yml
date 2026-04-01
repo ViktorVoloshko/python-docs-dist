@@ -57,7 +57,6 @@ jobs:
       - name: Install dependencies
         run: |
           make venv
-          mkdir dist
         working-directory: ${{ github.workspace }}/cpython/Doc
 
       - name: Build documentation
