@@ -25,6 +25,7 @@ Tags and releases follow `python_version.build` versioning model where `build` i
 ## Troubleshooting
 
 Here are some known building caveats:
+- *(PDF)* Starting with version 3.14, building requires rsvg-convert tool to be available in system's PATH
 - In versions up to 3.12, `Makefile` lacks a step to ensure that `dist` directory exists before trying to store build artifacts there, which leads to an error if it wasn't created manually
 - Building version 3.10 requires [`imghdr` module](https://docs.python.org/3/library/imghdr.html), which was removed in >=3.13
 
